@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="2"
+            android:onClick="back"
+            android:paddingTop="13dp"
+            android:paddingBottom="19dp"
+            android:src="@drawable/baseline_arrow_back_24"></ImageView>
+
+        <TextView
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:text="Home"
+            android:textColor="#222222"
+            android:textSize="20dp"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:layout_width="425dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="48dp"
+            android:background="#542C2B2B"
+            />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

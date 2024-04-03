@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:onClick="ClickMenu"
+        android:paddingTop="2dp"
+        android:src="@drawable/baseline_menu_24" />
+
+    <TextView
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:text="SDBC Online Attendance"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textSize="20dp">
+
+    </TextView></LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <View
+            android:layout_width="425dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="22dp"
+            android:background="#DA2C2B2B"
+            />
+
+       </LinearLayout>
+
+
+    <include layout="@layout/nav_drawer"></include>
+
+    </LinearLayout>
+
+
+

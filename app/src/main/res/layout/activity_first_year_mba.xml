@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".First_Year_MBA_SDBCE"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="2"
+            android:onClick="back"
+            android:paddingTop="13dp"
+            android:paddingBottom="19dp"
+            android:src="@drawable/baseline_arrow_back_24"></ImageView>
+
+        <TextView
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:text="SDBCE"
+            android:textColor="#222222"
+            android:textSize="20dp">
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:layout_width="425dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="48dp"
+            android:background="#542C2B2B"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="731dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="339dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="0dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="610dp"
+                android:layout_height="455dp"
+                android:onClick="sdbce"
+                android:paddingRight="170dp"
+                android:paddingBottom="224dp"
+                android:src="@drawable/sdbce"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:gravity="center_horizontal"
+                android:text="SDBCE"
+                android:textColor="#9C27B0"
+                android:textColorHighlight="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat"></TextView>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="339dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#673AB7"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/ComputerScience"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="12dp"
+                    android:text="1st year MBA"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="339dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#3A4FB7"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="12dp"
+                android:text="CS - A"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="339dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#3A4FB7"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="12dp"
+                android:text="CS - B"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

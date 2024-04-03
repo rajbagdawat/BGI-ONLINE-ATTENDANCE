@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Java_CSA_1stYE">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:onClick="back"
+            android:paddingTop="13dp"
+            android:paddingBottom="19dp"
+            android:src="@drawable/baseline_arrow_back_24"></ImageView>
+
+
+        <TextView
+            android:layout_width="219dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:text="SDBCE"
+            android:textColor="#222222"
+            android:textSize="20dp"></TextView>
+
+        <ImageView
+            android:id="@+id/calendericon"
+            android:layout_width="89dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="200dp"
+            android:layout_weight="2"
+            android:onClick="SL_Calender"
+            android:paddingTop="13dp"
+            android:paddingBottom="19dp"
+            android:src="@drawable/baseline_calendar_month_24"></ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:layout_width="425dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="48dp"
+            android:background="#542C2B2B"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/listview"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="175dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/firstyearcs"
+            android:layout_width="339dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="13dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#673AB7"
+            app:cardCornerRadius="10dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="65dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="12dp"
+                android:text="1st year (1st Sem) CS-A"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints,RtlCompat"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="125dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CS_A_1sty_cs"
+            android:layout_width="339dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#2196F3"
+            app:cardCornerRadius="10dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="129dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="12dp"
+                android:text="JAVA Lab"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="339dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#2196F3"
+            app:cardCornerRadius="10dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="129dp">
+
+            <TextView
+                android:id="@+id/show_date"
+                android:layout_width="157dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="110dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:text=" "
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+            <TextView
+
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="55dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:text="Date : "
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="425dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="15dp"
+            android:background="#32222222" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"
+        android:layout_marginTop="235dp"
+        android:layout_marginBottom="70dp"
+        tools:listitem="@layout/list_item"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="339dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#2DAC2F"
+        app:cardCornerRadius="100dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="12dp"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="129dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

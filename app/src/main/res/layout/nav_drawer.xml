@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="780dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:clickable="false"
+    >
+
+    <LinearLayout
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+         android:background="@color/white">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/bgi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:text="SDBC"
+            android:textColor="#333333"
+            android:textSize="20dp"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="#050096"
+        android:orientation="vertical"
+       >
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/pro_pic"
+            android:layout_width="128dp"
+            android:layout_height="84dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/stpic"/>
+
+        <TextView
+            android:id="@+id/pro_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Raj Bagdawat"
+           android:textColor="@color/white"
+            android:textSize="14dp"></TextView>
+        <TextView
+            android:id="@+id/pro_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="rajbagdawat100@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="14dp"></TextView>
+    </LinearLayout>
+<!--    <View-->
+<!--        android:layout_width="420dp"-->
+<!--        android:layout_height="3dp"-->
+<!--        android:layout_marginLeft="0dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:background="#888888" />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="Dashboard"-->
+<!--        android:textColor="#222222"-->
+
+
+<!--        android:textSize="18dp"></TextView>-->
+<!--    <View-->
+<!--        android:layout_width="420dp"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_marginLeft="0dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:background="#888888" />-->
+
+<!--      <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="41dp"-->
+<!--          android:layout_marginTop="10dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:orientation="horizontal"-->
+<!--          android:foreground="?android:attr/selectableItemBackground"-->
+<!--          android:clickable="true">-->
+<!--        <ImageView-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:src="@drawable/baseline_home_24"></ImageView>-->
+
+<!--          <TextView-->
+<!--              android:foreground="?android:attr/selectableItemBackground"-->
+<!--              android:clickable="true"-->
+<!--              android:layout_width="341dp"-->
+<!--              android:layout_height="41dp"-->
+<!--              android:layout_marginLeft="15dp"-->
+<!--              android:layout_marginTop="10dp"-->
+<!--              android:checkableBehavior="single"-->
+<!--              android:onClick="home"-->
+<!--              android:text="Home"-->
+<!--              android:textColor="#222222"-->
+<!--              android:textSize="17dp"-->
+<!--              ></TextView>-->
+<!--      </LinearLayout>-->
+          <LinearLayout
+
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:layout_width="match_parent"
+              android:layout_height="41dp"
+              android:background="@color/white"
+              android:orientation="horizontal">
+              <ImageView
+                  android:layout_width="20dp"
+                  android:layout_height="25dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginTop="10dp"
+                  android:src="@drawable/baseline_image_24"></ImageView>
+
+              <TextView
+                  android:foreground="?android:attr/selectableItemBackground"
+                  android:clickable="true"
+                  android:layout_width="341dp"
+                  android:layout_height="41dp"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginTop="10dp"
+                  android:onClick="editProfile"
+                  android:text="Edit Profile"
+                  android:textColor="#222222"
+
+                  android:textSize="17dp"></TextView>
+
+          </LinearLayout>
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/baseline_summarize_24"></ImageView>
+
+        <TextView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="340dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:checkableBehavior="single"
+            android:onClick="settings"
+            android:text="Show Records"
+            android:textColor="#222222"
+            android:textSize="17dp"></TextView>
+    </LinearLayout>
+
+    <!--    <View-->
+<!--        android:layout_width="420dp"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_marginLeft="0dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:background="#888888" />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="About Us"-->
+<!--        android:textColor="#222222"-->
+<!--        android:textStyle="bold"-->
+
+<!--        android:textSize="20dp"></TextView>-->
+<!--    <View-->
+<!--        android:layout_width="420dp"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_marginLeft="0dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:background="#888888" />-->
+
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/baseline_logout_24"></ImageView>
+
+        <TextView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="343dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:onClick="logout"
+            android:text="Logout"
+            android:textColor="#222222"
+            android:textSize="17dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="41dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true">
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/baseline_help_24"></ImageView>
+
+        <TextView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="343dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Help"
+            android:textColor="#222222"
+            android:textSize="17dp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/baseline_web_24"></ImageView>
+
+        <TextView
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:id="@+id/website"
+            android:layout_width="346dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:onClick="website"
+            android:text="Website"
+            android:textColor="#222222"
+
+            android:textSize="17dp"></TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

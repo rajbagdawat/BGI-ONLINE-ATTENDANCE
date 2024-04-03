@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id= "@+id/drawer_layer"
+    tools:context=".mainSubLayout.Student_Interface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/menu_toolbar2" />
+
+        <View
+            android:layout_width="420dp"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="50dp"
+            android:background="#AB888888" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="732dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/yearsemdata4"
+            android:layout_width="339dp"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginStart="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="55dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="339dp"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border3"/>
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="339dp"
+                android:autofillHints="Select Year"
+                android:layout_height="55dp"
+                android:layout_marginTop="-6dp"
+                android:popupBackground="#F7FFF1"
+                />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/yearsemdata5"
+            android:layout_width="339dp"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginStart="-339dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="105dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="339dp"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border3"/>
+            <Spinner
+                android:id="@+id/spinner5"
+                android:layout_width="339dp"
+                android:autofillHints="Select Year"
+                android:layout_marginTop="-6dp"
+                android:layout_height="55dp"
+                android:popupBackground="#F7FFF1"
+                />
+        </androidx.cardview.widget.CardView>
+        <View
+            android:id="@+id/view"
+            android:layout_width="425dp"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="-350dp"
+            android:layout_marginTop="157dp"
+            android:background="#542C2B2B" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Recycleview"
+            android:layout_marginTop="158dp"
+            android:layout_marginStart="-427dp"
+            tools:listitem="@layout/show_records"
+            app:layout_constraintBaseline_toBottomOf="@id/viewbar"
+            tools:ignore="NotSibling" />
+
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:layout_gravity="start"
+        android:id="@+id/nav"
+        app:headerLayout="@layout/student_sidebar"
+        ></com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

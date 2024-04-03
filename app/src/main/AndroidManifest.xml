@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BGI"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".mainSubLayout.editprofile_student"
+            android:exported="false" />
+        <activity
+            android:name=".mainSubLayout.Recycle_view_main"
+            android:exported="false" />
+        <activity
+            android:name=".mainSubLayout.Student_Interface"
+            android:exported="false" />
+        <activity
+            android:name=".Forgotteacher"
+            android:exported="false" />
+        <activity
+            android:name=".Forgotstudent"
+            android:exported="false" />
+        <activity
+            android:name=".Teachersignup"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".mainSubLayout.StudentLogin"
+            android:exported="false" />
+        <activity
+            android:name=".mainSubLayout.All_login"
+            android:exported="false" />
+        <activity
+            android:name=".mainSubLayout.Choose_Student_Teacher"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.Login.Login_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".mainSubLayout.RecycleSubjectLayout"
+            android:exported="false" />
+        <activity
+            android:name=".mainSubLayout.MainSubjectLayout"
+            android:exported="false" />
+        <activity
+            android:name=".SDBCE_FirstY_CS_A_ListView2Sem"
+            android:exported="false" />
+        <activity
+            android:name=".QA_CSB_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectMg_CSB_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".Java_CSB_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".MachineLrn_CSB_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".DataAy_CSB_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".Communi_CSB_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".ComputerNet_CSB_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".Computer_Graphics_CSB_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".Communi_CSA_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".Java_CSA_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".QA_CSA_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".DataAy_CSA_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectMg_CSA_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".ComputerNet_CSA_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".MachineLrn_CSA_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".Computer_Graphics_CSA_1stYE"
+            android:exported="false" />
+        <activity
+            android:name=".SDBCE_SecondY_CS_B_ListView"
+            android:exported="false" />
+        <activity
+            android:name=".SDBCE_SecondY_CS_A_ListView"
+            android:exported="false" />
+        <activity
+            android:name=".SDBCE_FirstY_CS_B_ListView"
+            android:exported="false" />
+        <activity
+            android:name=".Userr_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SDBCE_FirstY_CS_A_ListView"
+            android:exported="false" />
+        <activity
+            android:name=".Second_Year_MBA_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".First_Year_MBA_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".Fourth_Year_ME_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".Third_Year_ME_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".Second_Year_ME_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".First_Year_ME_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".Fourth_Year_EC_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".Third_Year_EC_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".Second_Year_EC_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".First_Year_EC_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".Fourth_Year_IT_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".Third_Year_IT_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".Second_Year_IT_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".First_Year_IT_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".Fourth_Year_CS_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".Third_Year_CS_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".Second_Year_CS_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".First_Year_CS_SDBCE"
+            android:exported="false" />
+        <activity
+            android:name=".SDBCT_activity"
+            android:exported="false" />
+        <activity
+            android:name=".SDBCE_activity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.BGI.NoActionBar" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Show_records"
+            android:exported="false" />
+        <activity
+            android:name=".Main_sdbce_sdbct_page"
+            android:exported="false"/>
+    </application>
+
+</manifest>
